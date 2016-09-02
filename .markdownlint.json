@@ -1,0 +1,7 @@
+{
+  "MD003": { "style": "atx" },
+  "MD004": { "style": "asterisk" },
+  "MD007": { "indent": 4 },
+  "MD029": { "style": "one" },
+  "MD024": false
+}

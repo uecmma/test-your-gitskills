@@ -8,3 +8,11 @@ addons:
     - ubuntu-toolchain-r-test
     packages:
     - libstdc++-4.9-dev
+
+after_success:
+  - npm run output
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash gitbook-deploy.sh
+
+env:
+  global:
+    - secure: "h1kEEZxvgVkiXpOm7g9LpZWKKnaa8uCF1ITlk8uBb9d7SQ7JqFtRFLcS/a7MstAli2S/x9xH8362OXZiQTiuZwrOcs44HiTIize3t9lqDvNAI8eIXCzipzzvx94GyemkeIhJj9ZCBNnG+nHySNfpRKO5Dhir7L80+p1vppZzVt47qbHvSlZrWmvVVutP54t6nYiN1AqaFQ1VTFjhmAo7dEJTo/16C8dAx0gQuRvrxRA4ZeZntZic7lBNN1UlUixugwi41WQrjSpzAEWmM9EqRexa8ibzlMFluNzozBIlW44BvlcgnTng/6K3pWs7TU8jO3k+oO3UzXxy12SGO6EWKsNSuR6A1XuoPbIkcbqwMd7nRaq+LwJCFXTd930+wt7LFl4gQHZIbDE+o852Ynep86shgfK3IEpJVbZrFZ2LR5XLwrOwux6qcr0GqdeoVak12mmKMes/VZy0LXJ7F6jR8T8bMOgB+la0K2NVpyivdlZLVjeVgI/SmFBByhXcy9Ncokhoxm9iRHbhJDDWkGGBEG1dNRVxs1mD7lAx0RLly/bSL0YA/Hk3FeCm217AzvAVzEsN83I16RwfUG2D7cn3kQrg+SKva3PBuT7UMeilM7jPiGpOCnqJ5qU3TgfAoyiU3uo4WRhbPCrWYXdVI1Wd1a1ZuWoYGRKCABXyzh6rhwo="
