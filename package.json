@@ -1,0 +1,28 @@
+{
+  "name": "test-your-gitskills",
+  "version": "0.0.1",
+  "description": "Test your Git Skills",
+  "bin": {
+    "build": "bin/build.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run build && npm run build-gitbook",
+    "build-gitbook": "gitbook install && gitbook build",
+    "build": "node ./bin/build.js",
+    "test": "echo \"no tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uecmma/test-your-gitskills.git"
+  },
+  "author": "MMA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uecmma/test-your-gitskills/issues"
+  },
+  "homepage": "https://github.com/uecmma/test-your-gitskills#readme",
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0"
+  }
+}

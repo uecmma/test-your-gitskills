@@ -1,0 +1,13 @@
+{
+  "gitbook": ">= 2.5.0",
+  "root": "./book",
+  "plugins": [
+    "anchors",
+    "forkmegithub"
+  ],
+  "pluginsConfig": {
+    "forkmegithub": {
+      "url": "https://github.com/uecmma/test-your-gitskills"
+    }
+  }
+}

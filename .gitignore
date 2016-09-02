@@ -1,0 +1,12 @@
+/dist/
+
+# for NPM
+npm-debug.log*
+node_modules/
+
+# for GitBook
+/_book/
+
+# for Other ignored files
+*.tar.gz
+*.tgz
