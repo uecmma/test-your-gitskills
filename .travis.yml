@@ -2,6 +2,15 @@ language: node_js
 node_js:
   - "6"
 
+sudo: false
+
+cache:
+  directories:
+  - node_modules
+  - $HOME/.gitbook
+  - $HOME/.npm
+  - $HOME/.node-gyp
+
 addons:
   apt:
     sources:
@@ -11,7 +20,7 @@ addons:
 
 after_success:
   - npm run output
-  - test $TRAVIS_PULL_REQUEST == "false" && bash assets/deploy/gitbook-deploy.sh
+  - test $TRAVIS_PULL_REQUEST == "false" && bash assets/deploy/gitbook.bash
 
 env:
   global:
