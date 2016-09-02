@@ -1,8 +1,12 @@
 /dist/
+/output/
 
 # for NPM
 npm-debug.log*
 node_modules/
+
+# for Typescript
+/typings/
 
 # for GitBook
 /_book/

@@ -3,14 +3,20 @@
   "version": "0.0.1",
   "description": "Test your Git Skills",
   "bin": {
-    "build": "bin/build.js"
+    "build": "./dist/bin/build.js"
   },
-  "main": "index.js",
+  "main": "./dist/lib/index.js",
   "scripts": {
-    "prepublish": "npm run build && npm run build-gitbook",
-    "build-gitbook": "gitbook install && gitbook build",
-    "build": "node ./bin/build.js",
-    "test": "echo \"no tests\""
+    "prepublish": "npm run setup && npm run build && npm run output",
+    "setup": "typings install && gitbook install",
+    "build": "gulp build",
+    "output-gitbook": "gitbook build",
+    "output-repo": "node ./dist/bin/build.js",
+    "output": "npm run output-gitbook && npm run output-repo",
+    "lint": "gulp lint",
+    "only-test": "gulp test",
+    "pretest": "npm run lint",
+    "test": "npm run only-test"
   },
   "repository": {
     "type": "git",
@@ -23,6 +29,20 @@
   },
   "homepage": "https://github.com/uecmma/test-your-gitskills#readme",
   "devDependencies": {
-    "gitbook-cli": "^2.3.0"
+    "coffee-script": "^1.10.0",
+    "gitbook-cli": "^2.3.0",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-tslint": "^6.1.1",
+    "gulp-typescript": "^2.13.6",
+    "merge2": "^1.0.2",
+    "tslint": "^3.15.1",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.3"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "mkdirp": "~0.5.1",
+    "nodegit": "~0.14.1"
   }
 }
