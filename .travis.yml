@@ -11,7 +11,7 @@ addons:
 
 after_success:
   - npm run output
-  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash gitbook-deploy.sh
+  - test $TRAVIS_PULL_REQUEST == "false" && bash gitbook-deploy.sh
 
 env:
   global:

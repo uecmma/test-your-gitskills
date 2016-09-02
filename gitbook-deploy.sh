@@ -7,7 +7,7 @@ if [ "$TRAVIS_BRANCH" != "master" ]; then
   exit 0
 fi
 
-rev=$(git rev-parge --short HEAD)
+rev=$(git rev-parse --short HEAD)
 
 cd _book
 
