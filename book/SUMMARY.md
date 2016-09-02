@@ -18,7 +18,8 @@
 1. [コミットからパスワードを除去する](contents/09-EditCommit.md)
 1. [マージされたブランチを平らにする](contents/10-EditMergeCommit.md)
 1. [リクエストのコンフリクト解決を行う](contents/11-ResolveConflictings.md)
-1. [Markdownを書く](contents/12-WriteMarkdown.md)
+1. [コミットを綺麗にする](contents/12-CleaningCommits.md)
+1. [Markdownを書く](contents/13-WriteMarkdown.md)
 
 ## 最後に
 
