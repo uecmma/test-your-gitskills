@@ -16,7 +16,8 @@
     "lint": "gulp lint",
     "only-test": "gulp test",
     "pretest": "npm run lint",
-    "test": "npm run only-test"
+    "test": "npm run only-test",
+    "prepush": "npm test"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "gulp-load-plugins": "^1.2.4",
     "gulp-tslint": "^6.1.1",
     "gulp-typescript": "^2.13.6",
+    "husky": "^0.11.7",
     "markdownlint": "^0.2.0",
     "merge2": "^1.0.2",
     "run-sequence": "^1.2.2",

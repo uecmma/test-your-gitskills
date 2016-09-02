@@ -10,7 +10,7 @@ runSequence  = require 'run-sequence'
 
 $.markdownlint = (filename = '.markdownlint.json') ->
   config = try
-    Fs.readFileSync filename
+    JSON.parse Fs.readFileSync filename
   catch err
     undefined
 
@@ -24,9 +24,24 @@ $.markdownlint = (filename = '.markdownlint.json') ->
       (err, result) ->
         resultString = (result || '').toString()
 
-        console.log resultString if resultString
+        file.markdownLintResult = resultString if resultString
         next err, file
 
+$.markdownlint.reporter = ->
+  failures = []
+
+  stream = through2.obj (file, enc, next) ->
+    failures.push file.markdownLintResult if file.markdownLintResult
+    next undefined, file
+
+  stream
+    .on 'end', ->
+      if failures.length > 0
+        console.log "Report #{failures.length} errors:"
+        failures.forEach (failure) ->
+          console.log "    #{failure.toString()}"
+
+        this.emit 'error', new Error 'markdownlint reports some errors'
 
 tsProject = $.typescript.createProject 'tsconfig.json',
   sortOutput: true
@@ -37,13 +52,16 @@ gulp.task 'lint:ts', ->
     'src/**/*.ts'
   ]
     .pipe $.tslint()
+    .pipe $.tslint.report()
 
 gulp.task 'lint:md', ->
   gulp.src [
+    'README.md'
     'book/**/*.md'
     'assets/resources/**/*.md'
   ], { read: false }
     .pipe $.markdownlint '.markdownlint.json'
+    .pipe $.markdownlint.reporter()
 
 gulp.task 'lint', (cb) ->
   runSequence 'lint:ts'
