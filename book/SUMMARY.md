@@ -7,7 +7,7 @@
 
 ## 問題
 
-1. [リモートにコミットをアップロードする](contents/01-SimplyCommitPushing.md)
+1. [コミットをアップロードする](contents/01-SimplyCommitPushing.md)
 1. [リモートのコミットを取り込む](contents/02-SimplyCommitPulling.md)
 1. [特定のコミットを取ってくる](contents/03-CherryPickCommit.md)
 1. [ブランチに変更を載せる](contents/04-RebaseBranch.md)
