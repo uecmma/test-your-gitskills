@@ -68,6 +68,8 @@ index 0000000..84305bd
 
 ## ヒント
 
+## 課題解説
+
 ## 課題解答例
 
 ```bash
@@ -85,5 +87,3 @@ $ git commit -am "Fix work 1 content"
 $ git rm willremove.txt
 $ git commit -m "Remove willremove content"
 ```
-
-## 課題解説
