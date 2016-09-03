@@ -36,6 +36,8 @@ index 0000000..e0db2b0
 
 ## ヒント
 
+## 課題解説
+
 ## 課題解答例
 
 ```bash
@@ -44,5 +46,3 @@ $ cat > work2.txt
 Complete Work 2 content
 $ git commit -am "Fix work 2 content"
 ```
-
-## 課題解説
