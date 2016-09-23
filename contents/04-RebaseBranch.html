@@ -392,7 +392,38 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x554F;&#x984C;4-&#x300C;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5909;&#x66F4;&#x3092;&#x8F09;&#x305B;&#x308B;&#x300D;"><a name="&#x554F;&#x984C;4-&#x300C;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5909;&#x66F4;&#x3092;&#x8F09;&#x305B;&#x308B;&#x300D;" class="plugin-anchor" href="#&#x554F;&#x984C;4-&#x300C;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5909;&#x66F4;&#x3092;&#x8F09;&#x305B;&#x308B;&#x300D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x554F;&#x984C;4 &#x300C;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5909;&#x66F4;&#x3092;&#x8F09;&#x305B;&#x308B;&#x300D;</h1>
+                                <h1 id="&#x554F;&#x984C;4-&#x300C;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5909;&#x66F4;&#x3092;&#x8F09;&#x305B;&#x308B;&#x300D;"><a name="&#x554F;&#x984C;4-&#x300C;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5909;&#x66F4;&#x3092;&#x8F09;&#x305B;&#x308B;&#x300D;" class="plugin-anchor" href="#&#x554F;&#x984C;4-&#x300C;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5909;&#x66F4;&#x3092;&#x8F09;&#x305B;&#x308B;&#x300D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x554F;&#x984C;4 &#x300C;&#x30D6;&#x30E9;&#x30F3;&#x30C1;&#x306B;&#x5909;&#x66F4;&#x3092;&#x8F09;&#x305B;&#x308B;&#x300D;</h1><h2 id="&#x8AB2;&#x984C;&#x5185;&#x5BB9;"><a name="&#x8AB2;&#x984C;&#x5185;&#x5BB9;" class="plugin-anchor" href="#&#x8AB2;&#x984C;&#x5185;&#x5BB9;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8AB2;&#x984C;&#x5185;&#x5BB9;</h2><ol><li><code>work-4</code>&#x306E;&#x5909;&#x66F4;&#x3092;&#x5168;&#x3066;&#x3001;<code>work-4-base</code>&#x306E;&#x4E0A;&#x306B;&#x8F09;&#x305B;&#x3066;&#x304F;&#x3060;&#x3055;&#x3044;
+</li></ol>
+<h3 id="&#x8AB2;&#x984C;&#x5185;&#x5BB9;&#x306E;&#x72B6;&#x614B;"><a name="&#x8AB2;&#x984C;&#x5185;&#x5BB9;&#x306E;&#x72B6;&#x614B;" class="plugin-anchor" href="#&#x8AB2;&#x984C;&#x5185;&#x5BB9;&#x306E;&#x72B6;&#x614B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8AB2;&#x984C;&#x5185;&#x5BB9;&#x306E;&#x72B6;&#x614B;</h3><p>&#x8AB2;&#x984C;&#x3092;&#x5B8C;&#x6210;&#x3055;&#x305B;&#x305F;&#x72B6;&#x614B;&#x306F;&#x4EE5;&#x4E0B;&#x306E;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;&#x306A;&#x304A;&#x3001;&#x30B3;&#x30DF;&#x30C3;&#x30C8;ID&#x3084;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;ID&#x306F;&#x7570;&#x306A;&#x308B;&#x5834;&#x5408;&#x304C;&#x3042;&#x308A;&#x307E;&#x3059;&#x3002;</p><pre><code class="lang-diff">$ git log --pretty=format:&apos;%Cred%h%Creset -%C(yellow)%d%Creset %s&apos; --abbrev-commit -p work-4...master
+31ef43a - (HEAD -&gt; work-4) Complete work 4 content
+diff --git a/work4.txt b/work4.txt
+index cc1e58a..ba19d31 100644
+<span class="hljs-comment">--- a/work4.txt</span>
+<span class="hljs-comment">+++ b/work4.txt</span>
+@@ -1 +1,2 @@
+ Work 4 content
+<span class="hljs-addition">+Complete</span>
+
+f038a4d - (work-4-base) Add sub resource
+diff --git a/work4-base.txt b/work4-base.txt
+new file mode 100644
+index 0000000..2c0d908
+<span class="hljs-comment">--- /dev/null</span>
+<span class="hljs-comment">+++ b/work4-base.txt</span>
+@@ -0,0 +1 @@
+<span class="hljs-addition">+Sub resource</span>
+
+259365d - Add work 4 content
+diff --git a/work4.txt b/work4.txt
+new file mode 100644
+index 0000000..cc1e58a
+<span class="hljs-comment">--- /dev/null</span>
+<span class="hljs-comment">+++ b/work4.txt</span>
+@@ -0,0 +1 @@
+<span class="hljs-addition">+Work 4 content</span></code></pre>
+<h2 id="&#x30D2;&#x30F3;&#x30C8;"><a name="&#x30D2;&#x30F3;&#x30C8;" class="plugin-anchor" href="#&#x30D2;&#x30F3;&#x30C8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x30D2;&#x30F3;&#x30C8;</h2><h2 id="&#x8AB2;&#x984C;&#x89E3;&#x8AAC;"><a name="&#x8AB2;&#x984C;&#x89E3;&#x8AAC;" class="plugin-anchor" href="#&#x8AB2;&#x984C;&#x89E3;&#x8AAC;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8AB2;&#x984C;&#x89E3;&#x8AAC;</h2><h2 id="&#x8AB2;&#x984C;&#x89E3;&#x7B54;&#x4F8B;"><a name="&#x8AB2;&#x984C;&#x89E3;&#x7B54;&#x4F8B;" class="plugin-anchor" href="#&#x8AB2;&#x984C;&#x89E3;&#x7B54;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8AB2;&#x984C;&#x89E3;&#x7B54;&#x4F8B;</h2><pre><code class="lang-bash">git checkout work-4
+git rebase work-4-base</code></pre>
+
                                 
                                 </section>
                             
@@ -435,7 +466,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ブランチに変更を載せる","level":"2.4","depth":1,"next":{"title":"コミットを自在に取り込む","level":"2.5","depth":1,"path":"contents/05-RebaseCommit.md","ref":"contents/05-RebaseCommit.md","articles":[]},"previous":{"title":"特定のコミットを取ってくる","level":"2.3","depth":1,"path":"contents/03-CherryPickCommit.md","ref":"contents/03-CherryPickCommit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","forkmegithub"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"forkmegithub":{"color":"gray","url":"https://github.com/uecmma/test-your-gitskills"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":">= 2.5.0"},"file":{"path":"contents/04-RebaseBranch.md","mtime":"2016-09-03T08:56:57.117Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-03T08:57:58.976Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ブランチに変更を載せる","level":"2.4","depth":1,"next":{"title":"コミットを自在に取り込む","level":"2.5","depth":1,"path":"contents/05-RebaseCommit.md","ref":"contents/05-RebaseCommit.md","articles":[]},"previous":{"title":"特定のコミットを取ってくる","level":"2.3","depth":1,"path":"contents/03-CherryPickCommit.md","ref":"contents/03-CherryPickCommit.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","forkmegithub"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"forkmegithub":{"color":"gray","url":"https://github.com/uecmma/test-your-gitskills"},"anchors":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":">= 2.5.0"},"file":{"path":"contents/04-RebaseBranch.md","mtime":"2016-09-23T19:31:39.701Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-09-23T19:32:57.994Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
